@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 
 CLASSIFIERS = [
@@ -21,16 +21,16 @@ CLASSIFIERS = [
  
 setup(
     name='cmsplugin-flickr-player',
-    version='0.2.3',
+    version='0.2.9.6',
     description='Flickr iframe with photo set for django-cms',
     author='ELCODO',
     author_email='info@elcodo.pl',
     url='https://github.com/elcodo/cmsplugin-flickr-player',
-    packages=['cmsplugin_flickr_player', ],
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
     license=open('LICENSE').read(),
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     long_description=open('README.md').read(),
-    include_package_data=True,
-    zip_safe=False,
 )

@@ -23,12 +23,3 @@ class FlickrLinkForm(forms.ModelForm):
                 path[1] != "photos" or path[3] != "sets":
             raise forms.ValidationError(_(u"Incorrect URL format."))
         return url
-
-    def save(self, commit=True):
-        instance = super(FlickrLinkForm, self).save(commit=False)
-        
-
-
-        if commit:
-            instance.save()
-        return instance
