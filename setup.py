@@ -21,13 +21,13 @@ CLASSIFIERS = [
  
 setup(
     name='cmsplugin-flickr-player',
-    version='0.2',
+    version='0.2.1',
     description='Flickr iframe with photo set for django-cms',
     author='ELCODO',
     author_email='info@elcodo.pl',
     url='https://github.com/elcodo/cmsplugin-flickr-player',
     packages=['cmsplugin_flickr_player', ],
-    license='LICENSE',
+    license=open('LICENSE').read(),
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     long_description=open('README.md').read(),
