@@ -20,6 +20,7 @@ class FlickrLinkForm(forms.ModelForm):
         path = url_parsed.path.split(u"/")
 
         if not u"flickr.com" in url_parsed.netloc or len(path) != 5 or \
-                path[1] != "photos" or path[3] != "sets":
+                path[1] != "photos" or path[3] != "sets" or \
+                path[3] != "albums":
             raise forms.ValidationError(_(u"Incorrect URL format."))
         return url
