@@ -8,7 +8,7 @@ from cms.models import CMSPlugin
 class FlickrLink(CMSPlugin):
     url = models.URLField(
         _("link"),
-        help_text=_(u"Format: https://www.flickr.com/photos/#username#/sets/#id#"))
+        help_text=_(u"Format: https://www.flickr.com/photos/#username#/albums/#id#"))
     width = models.CharField(
         _(u"width"),
         default=getattr(settings, "CMS_FLICKR_PLAYER_WIDTH", "100%"),

@@ -21,7 +21,7 @@ CLASSIFIERS = [
  
 setup(
     name='cmsplugin-flickr-player',
-    version='0.2.9.7',
+    version='0.2.9.8',
     description='Flickr iframe with photo set for django-cms',
     author='ELCODO',
     author_email='info@elcodo.pl',
